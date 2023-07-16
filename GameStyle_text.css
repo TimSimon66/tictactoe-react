@@ -1,0 +1,57 @@
+.game-boards {
+    margin: 25px;
+    margin-left: 500px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid #ccc;
+    grid-gap: 25px;
+}
+
+.game-cells {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.game-cells.is-x {
+    color: #2cccff;
+}
+
+.game-cells.is-o {
+    color: #FF6651;
+}
+
+.game-reset {
+    margin: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(222, 222, 227);
+    background-color: #6a5af9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 680px;
+}
+
+.game-winner.is-o {
+    padding: 25px;
+    font-size: 20px;
+    color: #FF6651;
+    margin-left: 670px;
+}
+
+.game-winner.is-x {
+    padding: 25px;
+    font-size: 20px;
+    color: #6a5af9;
+    margin-left: 670px;
+}
